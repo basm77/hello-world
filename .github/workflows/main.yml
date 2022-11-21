@@ -1,4 +1,5 @@
 - name: Download a Build Artifact
+  on: [workflow_dispatch]
   uses: actions/download-artifact@v3.0.1
   with:
     # Artifact name
