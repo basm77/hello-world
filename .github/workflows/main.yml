@@ -5,20 +5,14 @@ on:
         description: 'Log level'
         required: true
         default: 'warning'
-        type: choice
-        options:
-        - info
-        - warning
-        - debug
       tags:
         description: 'Test scenario tags'
-        required: false
-        type: boolean
+        required: true
+        default: 'bool'
       environment:
         description: 'Environment to run tests against'
-        type: environment
         required: true
-
+        default: 'test'
 jobs:
   log-the-inputs:
     runs-on: ubuntu-latest
